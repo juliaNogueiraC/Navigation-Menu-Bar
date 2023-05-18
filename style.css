@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
-
 
 body {
   background: #ecf0f3;
-
 }
 
 nav {
@@ -19,14 +16,43 @@ nav {
   /** backgroud: red; **/
   padding: 12px 0;
   background: #ecf0f3;
-  box-shadow: -3px -3px 7pc #ffffff,
-    3px 3px 5px #ceced1;
+  box-shadow: -3px -3px 7pc #ffffff, 3px 3px 5px #ceced1;
 }
 
-nav .menu{
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+nav .menu {
+  max-width: 1270px;
+  /** background: pink;**/
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
 }
-  
+
+.menu .logo a {
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #31344b;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul a {
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #31344b;
+  background-color: pink;
+  font-weight: 400;
+  padding: 10px 12px;
+  display: inline-flex;
+  box-shadow: -3px -3px 7pc #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 10px;
+}
