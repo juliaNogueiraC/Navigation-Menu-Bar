@@ -55,4 +55,41 @@ nav .menu {
   display: inline-flex;
   box-shadow: -3px -3px 7pc #ffffff, 3px 3px 5px #ceced1;
   border-radius: 10px;
+  position: relative;
+  transition: all o.3s ease;
+}
+
+.menu ul a:hover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7pc #ffffff, inset 3px 3px 5px #ceced1;
+  border-radius: 10px;
+}
+
+.menu ul a:hover {
+  color: #3498db;
+}
+
+@media (max-width:940px) {
+  .menu ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding-top: 45px;
+    height: 100%;
+    background: #ecf0f3;
+    box-shadow: 0 5px 10px #b0b0b5;
+    z-index: 12;
+  }
+
+  .menu ul a {
+    display: block;
+    font-size: 23px;
+  }
 }
